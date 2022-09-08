@@ -35,12 +35,12 @@ import Link from "next/link";
 function Home() {
   return (
     <>
-      <div className="h-screen bg-gradient-to-r from-sky-500 to-indigo-500"></div>
       <Head>
         <title>Home | 808ms</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" />
       </Head>
-      <div className="inline-flex gap-5">
+      <Content>
+        <div className="w-full inline-flex gap-5 min-h-screen bg-gradient-to-r from-sky-500 to-indigo-500">
         <Tooltip title="Github">
           <a
             href="https://github.com/808ms"
@@ -52,7 +52,7 @@ function Home() {
         </Tooltip>
         <Tooltip title="LinkedIn">
           <a
-            href="https://www.linkedin.com/in/casey-choi/"
+            href="https://www.linkedin.com/in/casey-choi-7b47b1248/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -60,7 +60,7 @@ function Home() {
           </a>
         </Tooltip>
         <Tooltip title="Contact">
-          <Link href="/cont act">
+          <Link href="/contact">
             <a>
               <MdContactPage
                 style={{ color: "white", position: "relative", top: "-2" }}
@@ -71,7 +71,7 @@ function Home() {
         </Tooltip>
       </div>
       <br />
-      <p>Ello, I&apos;m</p>
+      <p>Hello, I&apos;m</p>
       <Typography variant="h1" className="text-4xl tracking-wide">
         Casey Choi
       </Typography>
@@ -96,6 +96,8 @@ function Home() {
         <ListItem icon={SiNextDotJs} text="Next.js" />
         <ListItem icon={SiTailwindcss} text="TailwindCSS" />
       </ul>
+      </Content>
+      <footer/>
     </>
   );
 }
