@@ -40,7 +40,7 @@ function Home() {
         <link rel="icon" href="/icon.png" />
       </Head>
       <Content>
-        <div className="w-full inline-flex gap-5 min-h-screen bg-gradient-to-r from-sky-500 to-indigo-500">
+        <div className="w-full inline-flex gap-5 ">
         <Tooltip title="Github">
           <a
             href="https://github.com/808ms"
