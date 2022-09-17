@@ -6,34 +6,33 @@ import Content from "../components/content";
 import { Button, Typography } from "@mui/material";
 import Link from "next/link";
 
-
-function about() {
-    const [show, setShow] = React.useState(false);
-    return (
+function About() {
+  const [show, setShow] = React.useState(false);
+  return (
     <>
-        <Head>
+      <Head>
         <title>About/ Projects | 808ms</title>
         <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <Navbar />
-        <Content>
+      </Head>
+      <Navbar />
+      <Content>
         <div className="flex justify-center h-full">
-            <div className="text-center max-w-xl h-full ">
+          <div className="text-center max-w-xl h-full ">
             <Typography variant="h4" component="h4">
-            Projects
+              Projects
             </Typography>
             <p>
-            Hello, this is more information about me :D 
-                I started learing computer sciance this summer.
-                This will eventually have projects tha I&apos;ve worked on,
-                which will vary from more website to simple games and starter projects.
+              Hello, this is more information about me :D I started learing
+              computer sciance this summer. This will eventually have projects
+              tha I&apos;ve worked on, which will vary from more website to
+              simple games and starter projects.
             </p>
-            </div>
+          </div>
         </div>
-        </Content>
-        <Footer />
+      </Content>
+      <Footer />
     </>
-    );
+  );
 }
 
-export default about;
+export default About;
