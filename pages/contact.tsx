@@ -6,33 +6,39 @@ import Content from "../components/content";
 import styles from "../styles/contact.module.css";
 import { Button } from "@mui/material";
 
-export default function Contact() {
+const Contact = () => {
   return (
     <>
       <Head>
         <title>Contact</title>
         <link rel="icon" href="/icon.png" />
       </Head>
-      <Navbar />
+      {/* <Navbar /> */}
       <Content>
-        You can contact me at{" "}
-        <a href="mailto:hunter96816@gmail.com" className={styles.link}>
-          hunter96816@gmail
-        </a>
-        <br />
-        <div className="flex justify-center">
-          <Button
-            onClick={() => {
-              window.location.href = "/";
-            }}
-            variant="contained"
-          >
-            Go home
-          </Button>
+        <div className="flex items-center min-h-screen ">
+          <div className="bg-black bg-opacity-80 p-10 rounded-xl">
+            <span className="text-white">You can contact me at </span>
+            <a href="mailto:hunter96816@gmail.com" className={styles.link}>
+              hunter96816@gmail.com
+            </a>
+            <br />
+            <div className="flex justify-center bg-black">
+              <Button
+                onClick={() => {
+                  window.location.href = "/";
+                }}
+                variant="contained"
+              >
+                Go home
+              </Button>
+            </div>
+          </div>
         </div>
       </Content>
 
       <Footer />
     </>
   );
-}
+};
+
+export default Contact;
