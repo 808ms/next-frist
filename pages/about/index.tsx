@@ -10,6 +10,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { Tooltip, Typography } from "@mui/material";
+import Carousel from "../../components/Carousel";
 
 function about() {
   return (
@@ -47,6 +48,7 @@ function about() {
           </div>
         </div>
       </Back>
+      <Carousel/>
     </>
   );
 }

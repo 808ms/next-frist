@@ -11,9 +11,9 @@ export default function Carousel() {
     2: 2,
   };
   const items = [
-    "/index/about/tienlan5.png",
-    "/index/about/alec6.png",
-    "/index/about/miklos.png",
+    "/index/about/flowernew.png",
+    "/index/about/rocky.png",
+    "/index/about/wave.png",
   ];
   // const items = [
   //   "/index/about/tienlan.png",
@@ -53,7 +53,6 @@ export default function Carousel() {
                     }}
                     className="hover:scale-110 transition-all ease-in-out duration-300 max-w-[230px]"
                     src={item}
-                    alt={names[activeIndex][0]}
                   ></img>
                 </button>
               );
