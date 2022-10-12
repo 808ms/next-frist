@@ -27,6 +27,7 @@ import { MdContactPage } from "react-icons/md";
 import React from "react";
 import { Tooltip, Typography } from "@mui/material";
 import Link from "next/link";
+import Carousel from "../components/Carousel";
 
 function Home() {
   return (
@@ -35,6 +36,7 @@ function Home() {
         <title>Home | 808ms</title>
         <link rel="icon" href="/public/icon.png" />
       </Head>
+      <Navbar />
       <Content>
         <div className="flex justify-center items-center min-h-screen">
           <div className="bg-black bg-opacity-80 p-10 rounded-xl">
